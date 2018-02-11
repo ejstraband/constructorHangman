@@ -1,0 +1,28 @@
+{
+  "name": "constructorhangman",
+  "version": "1.0.0",
+  "description": "CLI Hangman Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejstraband/constructorHangman.git"
+  },
+  "keywords": [
+    "CodingBootCamp",
+    "CLI",
+    "Constructors"
+  ],
+  "author": "Eric Traband",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ejstraband/constructorHangman/issues"
+  },
+  "homepage": "https://github.com/ejstraband/constructorHangman#readme",
+  "dependencies": {
+    "inquirer": "^5.1.0",
+    "prompt": "^1.0.0"
+  }
+}
