@@ -1,51 +1,36 @@
-console.log("**Applicaton Start**");
+// testing variables
+var secretWord = "giraffe";
+var guessDisplay;
 
-var secretWord = "Giraffe";
-console.log("Secret Word is: " + secretWord);
-
-var prompt = require('prompt');
-
-var schema = {
-    properties: {
-      guess: {
-        pattern: /[a-zA-Z]/,
-        message: 'guesses must be single letters',
-        required: true
-      }
+function Letter(guess) {
+    this.guess = guess;
+    // guessed implies success
+    this.guessed = false;
+    this.checkGuess = function() {
+        console.log("check the guess");
+        if ((secretWord.indexOf(guess)) == -1) {
+            var successfulMatch = false;
+        } else {
+            var successfulMatch = true;
+            this.guessed = true;
+        }
+        console.log("letter matched: " + successfulMatch);
     }
-  };
+    this.displayGuess = function() {
+        console.log("displays the letter or dash")
+        if (this.guessed === true) {
+            guessDisplay = this.guess;
+        } else {
+            guessDisplay = " _ ";
+        }
+        console.log(guessDisplay);
+    }
+}
 
-   // Start the prompt 
-  prompt.start();
- 
-  prompt.get(schema, function (err, result) {
-    console.log('you guessed: ' + result.guess);
-  });
+// lets me pass in a letter as an argument
+var newGuess = new Letter(process.argv[2]);
 
-
-// Letter.js: Contains a constructor, Letter. 
-
-function Letter(letterGuess) {
-// This constructor should be able to either 
-// display an underlying character or a blank 
-// placeholder (such as an underscore), depending 
-// on whether or not the user has guessed the
-// letter. That means the constructor should define:
-// A string value to store the underlying character for the letter
-    this.letterGuess = letterGuess;
-// A boolean value that stores whether that letter has been guessed yet
-    this.letterAlreadyGuessed = letterGuess;
-};
-
-// A function that returns the underlying character if the letter has 
-// been guessed, or a placeholder (like an underscore) if the letter has not been guessed
-function guessChecker() {
-
-};
-
-// A function that takes a character as an argument and checks it against 
-// the underlying character, updating the stored boolean value to true if it was guessed correctly
-function updateSecretWord() {
-
-};
-
+console.log(newGuess);
+newGuess.checkGuess();
+newGuess.displayGuess();
+console.log(newGuess.guessed);
