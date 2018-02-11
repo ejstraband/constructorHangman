@@ -1,12 +1,26 @@
 console.log("**Applicaton Start**");
 
-var secretWord = "guess";
-console.log("Secret Word: " + secretWord);
+var secretWord = "Giraffe";
+console.log("Secret Word is: " + secretWord);
 
-var inquirer = require('inquirer');
-inquirer.prompt([/* Pass your questions in here */]).then(answers => {
-    // Use user feedback for... whatever!!
-});
+var prompt = require('prompt');
+
+var schema = {
+    properties: {
+      guess: {
+        pattern: /[a-zA-Z]/,
+        message: 'guesses must be single letters',
+        required: true
+      }
+    }
+  };
+
+   // Start the prompt 
+  prompt.start();
+ 
+  prompt.get(schema, function (err, result) {
+    console.log('you guessed: ' + result.guess);
+  });
 
 
 // Letter.js: Contains a constructor, Letter. 
