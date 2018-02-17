@@ -1,6 +1,11 @@
+// start the app
+console.log("**Letter.js Start**");
+
 // testing variables
-var secretWord = "giraffe";
-var guessDisplay;
+// var secretWord = "giraffe";
+// var guessDisplay;
+
+// var secretWord;
 
 function Letter(guess) {
     this.guess = guess;
@@ -27,10 +32,13 @@ function Letter(guess) {
     }
 }
 
-// lets me pass in a letter as an argument
-var newGuess = new Letter(process.argv[2]);
+// lets me pass in a letter as an argument for testing
+// var newGuess = new Letter(process.argv[2]);
 
-console.log(newGuess);
-newGuess.checkGuess();
-newGuess.displayGuess();
-console.log(newGuess.guessed);
+// console.log(newGuess);
+// newGuess.checkGuess();
+// newGuess.displayGuess();
+// console.log(".guessed: " + newGuess.guessed);
+
+
+module.exports = Letter;
