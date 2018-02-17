@@ -29,14 +29,8 @@ var schema = {
   };
 
 
-  for (i=0; i < secretWord.length; i++) {
-      
-  }
-
-
-
-
-
+//   for (i=0; i < secretWord.length; i++) {
+//   }
 
 // start prompt 
 prompt.start();
@@ -76,3 +70,25 @@ function guessChecker(guess) {
         console.log("You guessed correctly")
     }
 };
+
+
+
+// ALTERNATE UI
+
+// // var inquirer = require("inquirer");
+
+// var prompt = require('prompt');
+
+// // var Word = require("./Word");
+
+// var turnsRemaining = 10;
+
+// var yourGuess;
+
+// prompt.start();
+
+// prompt.get(['yourGuess'], function (err, result) {
+//     console.log("Guess Received");
+//     currentGuess = result.yourGuess;
+//     console.log("Guess is: " + yourGuess);
+// });

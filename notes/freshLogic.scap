@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScappleDocument Version="1.1" ID="9C64BBC9-464B-4332-AA5D-3FC561DA0619">
+    <Notes>
+        <Note ID="4" FontSize="12.0" Position="105.0,53.0" Width="38.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Index</String>
+            <ConnectedNoteIDs>7</ConnectedNoteIDs>
+            <PointsToNoteIDs>7</PointsToNoteIDs>
+        </Note>
+        <Note ID="5" FontSize="12.0" Position="334.410156,65.390625" Width="37.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Word</String>
+            <ConnectedNoteIDs>9</ConnectedNoteIDs>
+            <PointsToNoteIDs>9</PointsToNoteIDs>
+        </Note>
+        <Note ID="6" FontSize="12.0" Position="580.0,72.0" Width="39.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>Letter</String>
+            <ConnectedNoteIDs>12</ConnectedNoteIDs>
+            <PointsToNoteIDs>12</PointsToNoteIDs>
+        </Note>
+        <Note ID="7" FontSize="12.0" Position="48.042969,109.183594" Width="158.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>prompt to capture the guess
+</String>
+            <ConnectedNoteIDs>4</ConnectedNoteIDs>
+        </Note>
+        <Note ID="8" FontSize="12.0" Position="35.179688,180.863281" Width="176.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>useWordToConstructTheGuess</String>
+        </Note>
+        <Note ID="9" FontSize="12.0" Position="263.835938,120.078125" Width="226.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>variable: arrayOfLettersOfTheCurrentSecret
+Word</String>
+            <ConnectedNoteIDs>5, 10</ConnectedNoteIDs>
+            <PointsToNoteIDs>10</PointsToNoteIDs>
+        </Note>
+        <Note ID="10" FontSize="12.0" Position="264.0,191.0" Width="200.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>function(): BuildTheSecretWordDisplay</String>
+            <ConnectedNoteIDs>9, 11</ConnectedNoteIDs>
+            <PointsToNoteIDs>11</PointsToNoteIDs>
+        </Note>
+        <Note ID="11" FontSize="12.0" Position="268.0,256.0" Width="219.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>function():
+takesGuessCallsLetterGuessFunction</String>
+            <ConnectedNoteIDs>10</ConnectedNoteIDs>
+        </Note>
+        <Note ID="12" FontSize="12.0" Position="580.0,129.0" Width="68.0">
+            <Appearance>
+                <Alignment>Left</Alignment>
+            </Appearance>
+            <String>constructor
+</String>
+            <ConnectedNoteIDs>6</ConnectedNoteIDs>
+        </Note>
+    </Notes>
+    <BackgroundShapes></BackgroundShapes>
+    <AutoFit>4-8, 12</AutoFit>
+    <NoteStyles>
+        <Style Name="Bubble (Blue)" ID="54077B51-9B00-4F57-B3BD-AC7544C26F12" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.561855 0.71062 0.779401</BorderColor>
+            <FillColor>0.702319 0.888276 0.974252</FillColor>
+        </Style>
+        <Style Name="Bubble (Green)" ID="F8FB2E8C-FE55-4D8B-8C28-D341C9EBD738" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.572684 0.758969 0.558154</BorderColor>
+            <FillColor>0.715855 0.948712 0.697692</FillColor>
+        </Style>
+        <Style Name="Bubble (Pink)" ID="F6DC86B4-EAA7-4F23-892F-B533A721A0AC" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.957566 0.766747 0.999616</FillColor>
+        </Style>
+        <Style Name="Bubble (Red)" ID="648DAD63-7DB4-4A05-A643-BF685F701346" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.794796 0.560965 0.58607</BorderColor>
+            <FillColor>0.993495 0.701207 0.732587</FillColor>
+        </Style>
+        <Style Name="Bubble (Yellow)" ID="4B507331-4A91-46A6-823C-00F6F757E6E1" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="No" AffectNoteBody="Yes" AffectFade="No">
+            <BorderThickness>1</BorderThickness>
+            <BorderColor>0.798177 0.714184 0.522055</BorderColor>
+            <FillColor>0.997722 0.89273 0.652569</FillColor>
+        </Style>
+        <Style Name="Red Text" ID="AD1E0F21-5234-4DFC-8316-AF858653E712" AffectFontStyle="No" AffectAlignment="No" AffectTextColor="Yes" AffectNoteBody="No" AffectFade="No">
+            <TextColor>0.985948 0.0 0.026951</TextColor>
+        </Style>
+        <Style Name="Title Text" ID="81FFD203-C32A-4636-B22A-51D9920F0319" AffectFontStyle="Yes" AffectAlignment="Yes" AffectTextColor="No" AffectNoteBody="No" AffectFade="No">
+            <FontSize>28.0</FontSize>
+            <IsBold>Yes</IsBold>
+        </Style>
+    </NoteStyles>
+    <UISettings>
+        <BackgroundColor>0.999767 0.98837 0.949907</BackgroundColor>
+        <DefaultFont>Helvetica</DefaultFont>
+        <DefaultTextColor>0.0 0.0 0.0</DefaultTextColor>
+    </UISettings>
+    <PrintSettings PaperSize="612.0,792.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="90.0" BottomMargin="90.0" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="Yes" PagesAcross="1" PagesDown="1"></PrintSettings>
+</ScappleDocument>
